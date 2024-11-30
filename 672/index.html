@@ -3,7 +3,6 @@
 
 
 
-
 <link rel="stylesheet" href="../style.css">
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
@@ -32,32 +31,38 @@ else {
 }
 </script></head><body>
 <div id="menu">
-<h1 id="msgs">PS4 6.72 FW Host v3.0 by GamerHack</h1>
+<h1 id="msgs">PS4 6.72 FW Host v3.0 <br>
+</h1>
 <hr>
 <br>
 <h1 style="font-size: 18px;"><font color="green">Pass = <span id="passCounter"></span>&nbsp;&nbsp;&nbsp;&nbsp;<font color="yellow">Main Payloads&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">Fail = <span id="failCounter"></span></font></font></font></h1>
-<button class="btn" onclick="load_goldhen24b162()"><font color="green"><font color="yellow"><font color="red"> GoldHEN v2.4b16.2 </font></font></font></button>
-
-
+<button class="btn" onclick="load_goldhen()"><font color="green"><font color="yellow"><font color="red"> GoldHEN v2.4b18 </font></font></font></button>
+&nbsp;
+&nbsp;
 
 <font color="green"><font color="yellow"><font color="red"><br>
-</font></font></font><h1 style="font-size: 18px;"><font color="green"><font color="yellow"><font color="red">Payloads</font></font></font></h1>&nbsp;
-
+</font></font></font><h1 style="font-size: 18px;"><font color="green"><font color="yellow"><font color="red">Payloads</font></font></font></h1>
+&nbsp;
+<button class="btn" onclick="load_ftp()"><font color="green"><font color="yellow"><font color="red"> FTP </font></font></font></button>
+<button class="btn" onclick="load_App2usb()"><font color="green"><font color="yellow"><font color="red"> App2USB </font></font></font></button>
+<button class="btn" onclick="load_binloader()"><font color="green"><font color="yellow"><font color="red"> Bin Loader </font></font></font></button>
 <font color="green"><font color="yellow"><font color="red"><br>
 <button class="btn" onclick="load_dumperG()"> Dump Game Only </button>
 <button class="btn" onclick="load_dumperU()"> Dump Update Only </button>
-<button class="btn" onclick="load_dumperGU()"> Dump Game + Update </button>
-<button class="btn" onclick="load_dumperM()"> Dump G. + U. Merged </button>
+<button class="btn" onclick="load_dumperGU()"> Dump Game + Update&nbsp; </button>
+
 <br>
 <button class="btn" onclick="load_enableUpdates()">  Enable Updates </button>
-<button class="btn" onclick="load_disableUpdates()"> Disable Updates </button>
-<button class="btn" onclick="tools_group()"> Backup and Restore </button>&nbsp; &nbsp;&nbsp; 
-<br>&nbsp;
+<button class="btn" onclick="load_disableUpdates()"> Disable Updates </button>&nbsp;
+<button class="btn" onclick="tools_group()"> Backup and Restore&nbsp; </button>
+
 <br>
-&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
-<big><big style="color: yellow;"><span style="font-weight: bold;">&#1605;&#1608;&#1583;&#1575;&#1578; &#1575;&#1604;&#1575;&#1604;&#1593;&#1575;&#1576;</span></big></big> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  <br>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-<button class="btn" onclick="mods_group()"> Games Mods </button>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <font color="white"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<br>&nbsp;<br>
+&nbsp;
+<button class="btn" onclick="mods_group()"> Games Mods </button>&nbsp;&nbsp; <font color="white">
+<br>
 </font></font></font></font></div>
 <div id="tools">
 <h1 id="msgs2"><font color="green"><font color="yellow"><font color="red"><font color="white">Backup and Restore </font></font></font></font></h1>
@@ -144,10 +149,10 @@ LoadedMSG="Jailbreak Completed â&#339;&#8221;";
 function loadScript(){getScript("jb2.js",function(){setTimeout(jailbreak2,1500);});}loadScript();
 }
 
-function load_goldhen24b162(){
-msgs.innerHTML="Loading GoldHEN v2.4b16.2 ...";
-LoadedMSG="GoldHEN v2.4b16.2 Loaded â&#339;&#8221;";
-PLfile="goldhen_2.4b16.2.bin";
+function load_goldhen(){
+msgs.innerHTML="Loading GoldHEN v2.4b18 ...";
+LoadedMSG="GoldHEN v2.4b18 Loaded â&#339;&#8221;";
+PLfile="goldhen_2.4b18.bin";
 setTimeout(jailbreak,500);
 }
 
