@@ -18,24 +18,30 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 <br>
 <div id="menu">
 <h1 style="font-size: 18px; color: yellow;">Main Payloads</h1>
-<button class="btn" onmouseover="msgs.innerHTML='GoldHEN v2.4b16.2 for 9.00 FW'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 by GamerHack'" onclick="load_goldhen24b162()"> GoldHEN v2.4b16.2 </button>&nbsp; &nbsp;&nbsp;&nbsp; 
+<button class="btn" onmouseover="msgs.innerHTML='GoldHEN v2.4b18 for 9.00 FW'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 by GamerHack'" onclick="load_goldhenbeta()"> GoldHEN v2.4b18 </button>
+&nbsp;
+
 <br>
 <h1 style="font-size: 18px;">Payloads</h1>
-&nbsp;&nbsp;&nbsp;<button class="btn" onmouseover="msgs.innerHTML='Dump Games to USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 by GamerHack'" onclick="load_dumper()"> App-Dumper </button>
-<button class="btn" onmouseover="msgs.innerHTML='Create a Backup of the Database and Users to a USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 by GamerHack'" onclick="load_dbackup()"> DB Backup </button>&nbsp; &nbsp;&nbsp; 
+&nbsp;
+<button class="btn" onmouseover="msgs.innerHTML='Dump Games to USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 by GamerHack'" onclick="load_dumper()"> App-Dumper </button>
+
+<button class="btn" onmouseover="msgs.innerHTML='Transfer Installed Games to USB Drive in exFAT'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 by GamerHack'" onclick="load_app2usb()"> App2USB </button>
+<button class="btn" onmouseover="msgs.innerHTML='Create a Backup of the Database and Users to a USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 by GamerHack'" onclick="load_dbackup()"> DB Backup </button>
+
 <br>
 <button class="btn" onmouseover="msgs.innerHTML='Enable System Updates'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 by GamerHack'" onclick="load_enablebUpdates()"> Enable Updates </button>
 <button class="btn" onmouseover="msgs.innerHTML='Disable System Updates'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 by GamerHack'" onclick="load_disableUpdates()"> Disable Updates </button>
 
-<button class="btn" onmouseover="msgs.innerHTML='Dump a Kernel Module to a USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 by GamerHack'" onclick="load_moduleDump()"> Module Dumper </button>&nbsp; &nbsp;&nbsp; 
+<button class="btn" onmouseover="msgs.innerHTML='Dump a Console Kernel to a USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 by GamerHack'" onclick="load_kernelDump()"> Kernel Dumper </button>
+<button class="btn" onmouseover="msgs.innerHTML='Dump a Kernel Module to a USB Drive'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 by GamerHack'" onclick="load_moduleDump()"> Module Dumper </button>
+
 <br>
-&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-&nbsp; 
+&nbsp;&nbsp; 
 <br>
-<a href="webactivator.html">&nbsp;</a>&nbsp; &nbsp;
-&nbsp; &nbsp; <br>
-<h1 style="font-size: 18px; color: yellow;"><big>&#1605;&#1608;&#1583;&#1575;&#1578; &#1575;&#1604;&#1575;&#1604;&#1593;&#1575;&#1576;</big><br>
+&nbsp;&nbsp;&nbsp; 
+<br>
+<h1 style="font-size: 18px; color: yellow;">&#1605;&#1608;&#1583;&#1575;&#1578; &#1575;&#1604;&#1571;&#1604;&#1593;&#1575;&#1576;<br>
 </h1>
 <button class="btn btn-onln" onclick="mods_group()" style="margin-bottom: 11px; width: 468px;"> Click Here to Load this Section </button>
 </div>
@@ -83,8 +89,8 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 <br>
 <button class="btn" onmouseover="msgs.innerHTML='Return to Main Menu'" onmouseout="msgs.innerHTML='PS4 9.00 FW Host v2.8 by GamerHack'" onclick="load_menu()" style="margin-bottom: 167px;"> Return </button>
 </div>
-<h1 style="margin-top: 55px;"><br>
-</h1>
+<h1 style="margin-top: 55px;"><a href="https://twitter.com/Znullptr" style="color: rgb(243, 20, 20); margin-left: 10px; margin-right: 10px;"><br>
+</a></h1>
 <script>
 sessionStorage.setItem("exploit","no");
 sessionStorage.setItem("netcat","no");
@@ -251,10 +257,10 @@ LoadedMSG = "Linux Loader Launched ..."
 }
 }
 
-function load_goldhen24b162(){
-msgs.innerHTML="Loading GoldHEN v2.4b16.2... Please Wait";
-LoadedMSG = "GoldHEN v2.4b16.2 Loaded ...";
-PLfile = "goldhen_2.4b16.2.bin";
+function load_goldhenbeta(){
+msgs.innerHTML="Loading GoldHEN v2.4b18... Please Wait";
+LoadedMSG = "GoldHEN v2.4b18 Loaded ...";
+PLfile = "goldhen_2.4b18.bin";
 load_poc();
 }
 
